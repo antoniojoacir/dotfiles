@@ -1,0 +1,91 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 10px;
+}
+
+@import "./themes/mocha.css";
+
+#waybar {
+  background-color: transparent;
+  color: @text;
+  margin: 5px 5px;
+}
+
+#workspaces {
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+#workspaces button {
+  background-color: @surface0;
+  border: 3px solid @surface0;
+  color: @lavender;
+  border-radius: 5px;
+  margin: 5px
+}
+
+#workspaces button.active {
+  background-color: @lavender;
+  color: @surface0;
+  border-radius: 5px;
+  border: 3px solid @surface0;
+}
+
+#workspaces button:hover {
+  background-color: @surface0;
+  color: @sapphire;
+  border-radius: 5px;
+}
+
+#tray,
+#backlight,
+#clock,
+#battery,
+#memory,
+#pulseaudio,
+#custom-paddc,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 10px;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#memory {
+  color: @pink;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#pulseaudio {
+  color: @maroon;
+}
+
+#custom-power {
+    margin-right: 5px;
+    border-radius: 0px 10px 10px 0px;
+    color: @red;
+}

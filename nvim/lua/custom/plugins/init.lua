@@ -18,4 +18,9 @@ return {
       signature = { enabled = true },
     },
   },
+  {
+    -- https://github.com/mfussenegger/nvim-jdtls
+    'mfussenegger/nvim-jdtls',
+    ft = 'java',
+  },
 }
